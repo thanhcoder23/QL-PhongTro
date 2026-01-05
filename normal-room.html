@@ -27,7 +27,7 @@
     <meta name="supported-color-schemes" content="light dark" />
     <link rel="preload" href="/dist/css/adminlte.css" as="style" />
     <!--end::Accessibility Features-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
         integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous" media="print"
@@ -144,12 +144,12 @@
                     <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="navigation"
                         aria-label="Main navigation" data-accordion="false" id="navigation">
-                         <li class="nav-item">
-              <a href="index.html" class="nav-link">
-                <i class="nav-icon bi bi-palette"></i>
-                <p>Trang Chủ</p>
-              </a>
-            </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon bi bi-palette"></i>
+                                <p>Trang Chủ</p>
+                            </a>
+                        </li>
                         <li class="nav-item ">
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon bi bi-speedometer"></i>
@@ -225,24 +225,51 @@
                                         <thead>
                                             <tr style="text-align: center;">
                                                 <th>Mã Phòng </th>
-                                                <th>Tên Phòng</th>                                               
-                                                <th>Người Thuê</th> 
+                                                <th>Tên Phòng</th>
+                                                <th>Khu Vực</th>
+                                                <th>Người Thuê</th>
                                                 <th>Số Điện Mới (kWh)</th>
-                                                <th>Số Nước Mới (m<sup>3</sup>)</th>   
+                                                <th>Số Nước Mới (m<sup>3</sup>)</th>
                                                 <th>Ngày Hết Hạn</th>
                                                 <th>Tình Trạng</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="align-middle">
-                                                
+                                            <tr style="text-align: center;">
+                                                <td>PTA010</td>
+                                                <td>Phòng P10</td>
+                                                <td>Khu A</td>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>150</td>
+                                                <td>20</td>
+                                                <td>2024-07-15</td>
+                                                <td><span class="badge bg-success">Đang Thuê</span></td>
+                                                <td><a href="normal-room-detail.html" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
 
+                                                    <a href="#" class="btn btn-warning btn-sm">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
-                                            <tr class="align-middle">
-                                               
-                                            </tr>
-                                            <tr class="align-middle">
-                                                
+                                            <tr style="text-align: center;">
+                                                <td>PTA011</td>
+                                                <td>Phòng P11</td>
+                                                <td>Khu A</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td><span class="badge bg-secondary">Trống</span></td>
+                                                <td><a href="#" class="btn btn-success btn-sm">
+                                                        <i class="fas fa-plus"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
