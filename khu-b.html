@@ -27,7 +27,7 @@
     <meta name="supported-color-schemes" content="light dark" />
     <link rel="preload" href="/dist/css/adminlte.css" as="style" />
     <!--end::Accessibility Features-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
         integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous" media="print"
@@ -144,37 +144,37 @@
                     <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="navigation"
                         aria-label="Main navigation" data-accordion="false" id="navigation">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">
-                                <i class="nav-icon bi bi-palette"></i>
-                                <p>Trang Chủ</p>
-                            </a>
-                        </li>
+                         <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="nav-icon bi bi-palette"></i>
+                <p>Trang Chủ</p>
+              </a>
+            </li>
                         <li class="nav-item ">
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon bi bi-speedometer"></i>
                                 <p>
-                                    Loại Phòng
+                                    Khu Vực
                                     <i class="nav-arrow bi bi-chevron-right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="Normal-room.html" class="nav-link ">
+                                    <a href="khu-a.html" class="nav-link ">
                                         <i class="nav-icon bi bi-circle"></i>
-                                        <p>Thường</p>
+                                        <p>Khu A</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="bg-room.html" class="nav-link">
+                                    <a href="khu-b.html" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
-                                        <p>Có Gác</p>
+                                        <p>Khu B</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="mini-house.html" class="nav-link">
+                                    <a href="khu-c.html" class="nav-link">
                                         <i class="nav-icon bi bi-circle"></i>
-                                        <p>Mini House</p>
+                                        <p>Khu C</p>
                                     </a>
                                 </li>
                             </ul>
@@ -201,7 +201,7 @@
                     <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Thông Tin Phòng Thường</h3>
+                            <h3 class="mb-0">Thông Tin Phòng Mini House</h3>
                         </div>
                     </div>
                     <!--end::Row-->
@@ -225,51 +225,50 @@
                                         <thead>
                                             <tr style="text-align: center;">
                                                 <th>Mã Phòng </th>
-                                                <th>Tên Phòng</th>
-                                                <th>Khu Vực</th>
                                                 <th>Người Thuê</th>
+                                                <th>Số Điện Cũ (kWh)</th>
+                                                <th>Số Nước Cũ (m<sup>3</sup>)</th>
                                                 <th>Số Điện Mới (kWh)</th>
                                                 <th>Số Nước Mới (m<sup>3</sup>)</th>
+                                                <th>Ngày Nhận Phòng</th>
                                                 <th>Ngày Hết Hạn</th>
                                                 <th>Tình Trạng</th>
-                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr style="text-align: center;">
-                                                <td>PTA010</td>
-                                                <td>Phòng P10</td>
-                                                <td>Khu A</td>
+                                            <tr class="align-middle">
+                                                <td>MS010</td>
                                                 <td>Nguyễn Văn A</td>
-                                                <td>150</td>
-                                                <td>20</td>
-                                                <td>2024-07-15</td>
-                                                <td><span class="badge bg-success">Đang Thuê</span></td>
-                                                <td><a href="normal-room-detail.html" class="btn btn-primary btn-sm">
-                                                        <i class="fas fa-eye"></i>
-                                                    </a>
+                                                <td>100</td>
+                                                <td>50</td>
+                                                <td>200</td>
+                                                <td>100</td>
+                                                <td>23/12/2025</td>
+                                                <td>23/12/2026</td>
+                                                <td>Đang Thuê</td>
 
-                                                    <a href="#" class="btn btn-warning btn-sm">
-                                                        <i class="fas fa-edit"></i>
-                                                    </a>
-                                                    <a href="#" class="btn btn-danger btn-sm">
-                                                        <i class="fas fa-trash"></i>
-                                                    </a>
-                                                </td>
                                             </tr>
-                                            <tr style="text-align: center;">
-                                                <td>PTA011</td>
-                                                <td>Phòng P11</td>
-                                                <td>Khu A</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td><span class="badge bg-secondary">Trống</span></td>
-                                                <td><a href="#" class="btn btn-success btn-sm">
-                                                        <i class="fas fa-plus"></i>
-                                                    </a>
-                                                </td>
+                                            <tr class="align-middle">
+                                                <td>MS012</td>
+                                                <td>Lương Thanh B</td>
+                                                <td>150</td>
+                                                <td>70</td>
+                                                <td>250</td>
+                                                <td>120</td>
+                                                <td>01/01/2024</td>
+                                                <td>01/01/2025</td>
+                                                <td>Hết Hạn</td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>MS013</td>
+                                                <td>Nguyễn Thị C</td>
+                                                <td>200</td>
+                                                <td>80</td>
+                                                <td>300</td>
+                                                <td>150</td>
+                                                <td>15/02/2024</td>
+                                                <td>15/02/2025</td>
+                                                <td>Hết Hạn</td>
                                             </tr>
                                         </tbody>
                                     </table>

@@ -27,7 +27,7 @@
     <meta name="supported-color-schemes" content="light dark" />
     <link rel="preload" href="/dist/css/adminlte.css" as="style" />
     <!--end::Accessibility Features-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
         integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous" media="print"
@@ -144,12 +144,12 @@
                     <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="navigation"
                         aria-label="Main navigation" data-accordion="false" id="navigation">
-                         <li class="nav-item">
-              <a href="index.html" class="nav-link">
-                <i class="nav-icon bi bi-palette"></i>
-                <p>Trang Chủ</p>
-              </a>
-            </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="nav-icon bi bi-palette"></i>
+                                <p>Trang Chủ</p>
+                            </a>
+                        </li>
                         <li class="nav-item ">
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon bi bi-speedometer"></i>
@@ -180,6 +180,11 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a href="infor-KH.html" class="nav-link">
+                                <i class="nav-icon bi bi-palette"></i>
+                                <p>Thông Tin Khách Hàng</p>
+                            </a>
+                        <li class="nav-item">
                             <a href="rentcalculate-room.html" class="nav-link">
                                 <i class="nav-icon bi bi-palette"></i>
                                 <p>Tính Tiền</p>
@@ -201,7 +206,7 @@
                     <!--begin::Row-->
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="mb-0">Thông Tin Phòng Thường</h3>
+                            <h3 class="mb-0">Thông Tin Khách Hàng</h3>
                         </div>
                     </div>
                     <!--end::Row-->
@@ -213,41 +218,112 @@
             <div class="app-content">
                 <!--begin::Container-->
                 <div class="container-fluid">
+                    <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card mb-4">
                                 <div class="card-header">
-                                    <h3 class="card-title">Thông tin chi tiết</h3>
+                                    <h3 class="card-title">Danh Sách Khách Hàng</h3>
                                 </div>
                                 <!-- /.card-header -->
-                                <div class="card-body ">
-                                <div class="row d-flex">
-                                    <div class="col-md-6">
-                                        <p><strong>Số phòng:</strong> A101</p>
-                                        <p><strong>Diện tích:</strong> 20 m²</p>
-                                        <p><strong>Giá thuê:</strong> 3,000,000 VND/tháng</p>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p><strong>Trạng thái:</strong> Đang cho thuê</p>
-                                        <p><strong>Tiện ích:</strong> Wifi, Máy lạnh, Nước nóng</p>
-                                        <p><strong>Người thuê:</strong> Nguyễn Văn A</p>
-                                    </div>
-                                    
-                                    <div class="col-md-12">
-                                        <hr>
-                                    </div>
-                                    <div class="col-md-12 d-flex justify-content-end">
-                                        <button class="btn btn-warning me-2">
-                                            chỉnh sửa
-                                        </button>
-                                        <button class="btn btn-success">
-                                            Lưu
-                                        </button>
-                                    </div>
+                                <div class="card-body table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr style="text-align: center;">
+                                                <th>Họ và Tên</th>
+                                                <th>Phòng</th>
+                                                <th>Khu Vực Ở</th>
+                                                <th>Ngày Sinh</th>
+                                                <th>CMND/CCCD</th>
+                                                <th>Số Điện Thoại</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: center;">
+                                            <tr>
+                                                <td>Nguyễn Văn A</td>
+                                                <td>A101</td>
+                                                <td>Khu A</td>
+                                                <td>01/01/1990</td>
+                                                <td>123456789</td>
+                                                <td>0909123456</td>
+                                                <td><a href="infor-KH-detail.html" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-warning btn-sm">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Trần Thị B</td>
+                                                <td>B202</td>
+                                                <td>Khu B</td>
+                                                <td>15/05/1992</td>
+                                                <td>987654321</td>
+                                                <td>0912987654</td>
+                                                <td><a href="infor-KH-detail.html" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-warning btn-sm">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>Phạm Văn C</td>
+                                                <td>C303</td>
+                                                <td>Khu C</td>
+                                                <td>20/10/1988</td>
+                                                <td>456789123</td>
+                                                <td>0921456789</td>
+                                                <td><a href="infor-KH-detail.html" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+
+                                                    <a href="#" class="btn btn-warning btn-sm">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="#" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer clearfix">
+                                    <ul class="pagination pagination-sm m-0 float-end">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">&laquo;</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">&raquo;</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- /.row (main row) -->
+                </div>
                     <!-- /.row (main row) -->
                 </div>
                 <!--end::Container-->
